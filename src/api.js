@@ -6,7 +6,7 @@ var kelvinToF = function(kelvin){
 
 module.exports = function(latitude, longitude){
   var url = `${rootUrl}&lat=${latitude}&lon=${longitude}`;
-  console.log(url)
+
   return fetch(url)
     .then(function(response){
       return response.json()
